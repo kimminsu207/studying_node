@@ -1,0 +1,19 @@
+{
+  "name": "doit_node",
+  "version": "1.0.0",
+  "main": "ch02_test6.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimminsu207/doit_node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimminsu207/doit_node/issues"
+  },
+  "homepage": "https://github.com/kimminsu207/doit_node#readme",
+  "description": ""
+}
