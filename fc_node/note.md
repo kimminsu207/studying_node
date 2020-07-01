@@ -97,4 +97,59 @@ sudo npm isntall -g nodemon
 파일에 변화가 생기면 자동으로 적용해주는 기능인데   
 윈도우에서는 잘 안되는경향이 있음
 
+npx   
+명령어를 사용하면 해당 모듈이 없을경우 설치 한 이후에 사용   
+프로젝트 규모가커지고 협업할때 매우 좋을듯
+예를들면 npx nodemon index.js 명령어를 실행하면   
+nodemon 모듈이 없을경우 설치 후 실행, 있을경우 그냥 실행
 
+<hr>
+
+exprss
+---
+
+목차
+1. express 시작
+2. Routing
+3. View Engine - Nunjucks
+4. 템플릿 상속
+5. 미들웨어
+6. form (body-parser)
+7. 정적파일
+8. Global View Varialbe
+9. 404, 500 error handling
+10. nunjucks macro
+11. Express 권장 구조
+
+
+왜 Express를 사용해야 하는가
+1. 웹서비스 관점
+    남들이 만들어둔걸 편하게 사용할 수 있음
+    예를들면 세션관리 등등
+2. 프레임워크 선정시 고려해야 될점
+
+https://github.com/parkjunyoung/express-online
+
+
+
+내장모듈을 사용한 웹서버 구동 
+```
+const http = require('http');
+
+http.createServer( (request, response) => {  
+    response.writeHead(200, {'Content-Type' : 'text/plain'});
+    response.write('Hello Server');
+    response.end();
+}).listen(3000);
+```
+
+http 상태 코드
+
+상태코드 설명
+1       조건부응답
+2       응답성공
+3       리다이렉션
+4       요청오류
+5       서버오류
+
+express를 이용한 웹 서버 구동
