@@ -70,6 +70,48 @@ package-lock.json은
 
 <hr>
 
+
+자료구조
+---
+FIFO   
+먼저 들어간 데이터가 먼저 나온다.
+
+
+LIFO   
+나중에 들어간 데이터가 먼저 나온다
+
+```
+// 큐 먼저 들어간게 먼저 나온다. FIFO
+
+console.log("Queue")
+const queue = []
+queue.push(1)
+queue.push(2)
+console.log(queue)
+const r = queue.shift()
+console.log(r)
+
+console.log("---------------")
+
+// 스택 나중에 들어간게 먼저 나온다. LIFO
+
+console.log("Stack")
+const stack = []
+stack.push(1)
+stack.push(2)
+console.log(stack)
+var s = stack.pop()
+console.log(s)
+```
+---
+이벤트 루프   
+
+http://latentflip.com/loupe   
+에서 확인할꺼야.
+
+
+---
+
 nodemon
 ---
 웹서버 띄우기
